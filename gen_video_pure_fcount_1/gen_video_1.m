@@ -2,7 +2,7 @@
 function gen_video_1(step, frame_rate)
 
 img_1 = rand(1080, 1920, 3);
-filename='video_rand3_with_fcount_1';
+filename='video_fcountx16_1';
 
 fn_out = [filename '_1080_f' num2str(frame_rate,'%02d') ];
 video_1 = VideoWriter(fn_out);
@@ -15,10 +15,9 @@ position = [ 192 10; 192 135*1; 192 135*2; 192 135*3; 192 135*4; 192 135*5; 192 
 box_color = { 'black', 'black','black', 'black', 'black', 'black','black', 'black', 'black', 'black','black', 'black', 'black', 'black','black', 'black' };
 
 
-for pos = 0:step:6000
+for pos = 0:step:3000
     conf_val = [pos pos pos pos pos pos pos pos pos pos pos pos pos pos pos pos];
     for ii=1:16
-        ii
         text_str{ii} = ['F' num2str(ii, '%02d') '-' num2str(conf_val(ii),'%04d') ' '];
     end
 
