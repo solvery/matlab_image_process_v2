@@ -1,5 +1,5 @@
 
-function gen_video_1(img_in, num)
+function img_out = gen_video_1(img_in, num)
 
 img_1 = img_in;
 

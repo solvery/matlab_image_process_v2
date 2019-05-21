@@ -1,4 +1,5 @@
 
+img_1 = rand(1080, 1920, 3);
 num = 123
 text_str = cell(4,1);
 conf_val = [num num num num];
@@ -8,7 +9,7 @@ end
 position = [192 108; 1152 108;  192 648;  1152 648];
 box_color = {'black', 'black','black','black'};
 
-img_out = insertText(img_1,position, text_str, 'FontSize',88,'BoxColor',...
+img_out = insertText(img_1,position, text_str, 'FontSize',100,'BoxColor',...
     box_color,'TextColor','white');
 
 figure 
