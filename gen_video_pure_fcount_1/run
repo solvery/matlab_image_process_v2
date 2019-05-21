@@ -1,0 +1,3 @@
+alias mrun='matlab -nodisplay -nodesktop -nojvm -nosplash -nosplash -prefersoftwareopengl -nodesktop -prefersoftwareopengl -r'
+
+mrun "gen_video_1(1, 60); exit"  > /dev/null &
