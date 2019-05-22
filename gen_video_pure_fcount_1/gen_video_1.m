@@ -1,7 +1,9 @@
 
 function gen_video_1(step, frame_rate)
 
-img_1 = rand(1080, 1920, 3);
+img_1 = imread('1080p-gray-mc.png');
+%img_1 = imread('excel-detail-1080p.png');
+%img_1 = rand(1080, 1920, 3);
 filename='video_fcountx16_1';
 
 fn_out = [filename '_1080_f' num2str(frame_rate,'%02d') ];
