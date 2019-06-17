@@ -1,6 +1,8 @@
 
 function gen_video_1(img_fn, vfn_prefix, step, frame_rate)
 
+% gen_video_1('mc_blue.png', 'video_mc_blue', 1, 60);
+
 img_1 = imread(img_fn);
 %img_1 = imread('excel-detail-1080p.png');
 %img_1 = rand(1080, 1920, 3);
@@ -17,7 +19,7 @@ position = [ 192 0; 192 135*1; 192 135*2; 192 135*3; 192 135*4; 192 135*5; 192 1
 box_color = { 'black', 'black','black', 'black', 'black', 'black','black', 'black', 'black', 'black','black', 'black', 'black', 'black','black', 'black' };
 
 
-for pos = 0:step:3000
+for pos = 0:step:1000
     conf_val = [pos pos pos pos pos pos pos pos pos pos pos pos pos pos pos pos];
     for ii=1:16
         text_str{ii} = ['F' num2str(ii, '%02d') '-' num2str(conf_val(ii),'%04d') ' '];
