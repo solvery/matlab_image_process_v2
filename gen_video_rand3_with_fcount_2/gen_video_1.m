@@ -5,7 +5,7 @@ img_1 = rand(1080, 1920, 3);
 filename='video_rand3_slide_with_fcount_1';
 
 fn_out = [filename '_1080_f' num2str(frame_rate,'%02d') ];
-video_1 = VideoWriter(fn_out);
+video_1 = VideoWriter(fn_out,'Uncompressed AVI');
 video_1.FrameRate = frame_rate;
 open(video_1);
 

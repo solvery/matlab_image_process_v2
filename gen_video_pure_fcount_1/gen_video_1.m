@@ -7,7 +7,7 @@ img_1 = imread(img_fn);
 filename=vfn_prefix;
 
 fn_out = [filename '_1080_f' num2str(frame_rate,'%02d') ];
-video_1 = VideoWriter(fn_out);
+video_1 = VideoWriter(fn_out, 'Uncompressed AVI' );
 video_1.FrameRate = frame_rate;
 open(video_1);
 
