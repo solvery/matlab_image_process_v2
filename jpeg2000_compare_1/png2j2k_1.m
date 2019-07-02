@@ -1,4 +1,4 @@
-clear;
+clear all;
 S = dir('img_orig/*.png');
 N = {S.name};
 for k = 1:numel(N);
@@ -8,4 +8,6 @@ for k = 1:numel(N);
     imwrite(img_1, [img_fn_name '.j2k'],'CompressionRatio',13);
     img_2 = imread([img_fn_name '.j2k']);
     imwrite(img_2, [img_fn_name '_j2k.png']);
+    img_3 = img_1 - img_2; 
+    imwrite(img_3, [img_fn_name '_diff.png']);
 end
