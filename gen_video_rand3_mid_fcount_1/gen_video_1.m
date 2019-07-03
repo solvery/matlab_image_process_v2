@@ -19,7 +19,7 @@ box_color = { 'black' };
 ii = 1;
 
 for pos = 0:step:1000
-    conf_val = [mod(pos, 30)];
+    conf_val = [mod(pos, frame_rate)];
     
     text_str{ii} = [ num2str(pos,'%04d') '-' num2str(conf_val,'%02d') ' '];
 
