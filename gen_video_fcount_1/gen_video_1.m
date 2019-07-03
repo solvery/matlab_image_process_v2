@@ -3,7 +3,8 @@ function gen_video_1(img_in, vfn_prefix, step, frame_rate)
 
 % gen_video_1('mc_blue.png', 'video_mc_blue', 1, 60);
 
-img_1 = img_in;
+img_1 = rand(100, 200, 3);
+img_1(:,:,:) = 0;
 %img_1 = imread('excel-detail-1080p.png');
 %img_1 = rand(1080, 1920, 3);
 filename=vfn_prefix;
