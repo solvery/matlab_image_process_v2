@@ -21,7 +21,7 @@ ii = 1;
 for pos = 0:step:1000
     conf_val = [mod(pos, 30)];
     
-    text_str{ii} = [ num2str(conf_val(ii),'%04d') ' '];
+    text_str{ii} = [ num2str(pos,'%04d') '-' num2str(conf_val,'%02d') ' '];
 
     img_2 = insertText(img_1,position, text_str, 'FontSize',40,'BoxColor', box_color,'BoxOpacity',1,'TextColor','white');
     writeVideo(video_1, img_2);
